@@ -11,6 +11,10 @@ end
 
 module Prelaunchr
   class Application < Rails::Application
+    
+    # Shopify API connection credentials:
+    config.shopify.api_key = 'b1dd0bc0891e876e392a21734baad940'
+    config.shopify.secret = '6e284ee4ecb336412eeb0667b7ac69a9'
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

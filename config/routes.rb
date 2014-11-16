@@ -1,10 +1,19 @@
 Prelaunchr::Application.routes.draw do
 
+  get 'welcome' => 'home#welcome'
+  get 'design' => 'home#design'
+
+  controller :sessions do
+    get 'login' => :new
+    post 'login' => :create
+    get 'auth/shopify/callback' => :show
+    delete 'logout' => :destroy
+    root :to => "users#director"  
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
-
-  root :to => "users#new"
+  resources :users
+  match 'users/new' => 'users#new'
 
   match 'users/create' => 'users#create'
 
@@ -15,6 +24,7 @@ Prelaunchr::Application.routes.draw do
   unless Rails.application.config.consider_all_requests_local
       match '*not_found', to: 'users#redirect', :format => false
   end
+end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
