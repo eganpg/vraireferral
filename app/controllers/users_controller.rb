@@ -12,40 +12,49 @@ class UsersController < ApplicationController
             
         end
         # Get user to see if they have already signed 
+
         user = User.where(email: email)
+            
         # If user doesnt exist, make them, and attach referrer
         if user.nil?
+
             cur_ip = IpAddress.find_by_address(request.env['HTTP_X_FORWARDED_FOR'])
-            raise cur_ip.inspect
+
             if !cur_ip
                 cur_ip = IpAddress.create(
                     :address => request.env['HTTP_X_FORWARDED_FOR'],
                     :count => 0
                 )
             end
+
             if cur_ip.count == 10
                 return redirect_to root_path
             else
                 cur_ip.count = cur_ip.count + 1
                 cur_ip.save
             end
+
             user = User.new(:email => params[:user][:email])
+
             @referred_by = User.find_by_referral_code(cookies[:h_ref])
+
             if !@referred_by.nil?
                 user.referrer = @referred_by
             end
+
             user.save
         end
+
         # Send them over refer action
-       
-            if user.nil?
+        respond_to do |format|
+            if !user.nil?
                 cookies[:h_email] = { :value => user.first.email }
-                redirect_to '/refer-a-friend' 
+                format.html { redirect_to '/refer-a-friend' }
             else
-                # Need to redirect to create an account via API create an account then store info and create referral id
-                redirect_to 'http://traction-development.myshopify.com/account/register', :alert => "Something went wrong!" 
+
+                format.html { redirect_to root_path, :alert => "Something went wrong!" }
             end
-      
+        end
     end
 
     # def create
