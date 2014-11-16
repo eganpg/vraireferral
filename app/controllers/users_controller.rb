@@ -16,6 +16,7 @@ class UsersController < ApplicationController
         # If user doesnt exist, make them, and attach referrer
         if user.nil?
             cur_ip = IpAddress.find_by_address(request.env['HTTP_X_FORWARDED_FOR'])
+            raise cur_ip.inspect
             if !cur_ip
                 cur_ip = IpAddress.create(
                     :address => request.env['HTTP_X_FORWARDED_FOR'],
@@ -36,15 +37,15 @@ class UsersController < ApplicationController
             user.save
         end
         # Send them over refer action
-        respond_to do |format|
+       
             if user.nil?
                 cookies[:h_email] = { :value => user.first.email }
-                format.html { redirect_to '/refer-a-friend' }
+                redirect_to '/refer-a-friend' 
             else
                 # Need to redirect to create an account via API create an account then store info and create referral id
-                format.html { redirect_to 'http://www.google.com', :alert => "Something went wrong!" }
+                redirect_to 'http://traction-development.myshopify.com/account/register', :alert => "Something went wrong!" 
             end
-        end
+      
     end
 
     # def create
