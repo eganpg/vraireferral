@@ -35,3 +35,11 @@
       </div>
     </div>
   </div>
+
+
+  
+            puts '------------'
+            puts @referred_by.email if @referred_by
+            puts params[:user][:email].inspect
+            puts request.env['HTTP_X_FORWARDED_FOR'].inspect
+            puts '------------'

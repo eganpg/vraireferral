@@ -8,7 +8,7 @@ Prelaunchr::Application.routes.draw do
     post 'login' => :create
     get 'auth/shopify/callback' => :show
     delete 'logout' => :destroy
-    root :to => "users#director"  
+    root :to => "users#new"  
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
