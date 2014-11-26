@@ -1,7 +1,6 @@
-Prelaunchr
-==========
+Shopify Referral Program
 
-Originally open sourced over on our [engineering blog](http://engineering.harrys.com/2014/07/21/dont-launch-crickets.html), and discussed in great detail over at [Tim Ferriss' Blog](http://fourhourworkweek.com/2014/07/21/harrys-prelaunchr-email), Prelaunchr is a skeleton Rails application for quickly starting a viral prelaunch campaign for new companies or products. The campaign is conducive to social sharing and has prize levels based on the number of people each person refers. By default, we've included our original HTML/CSS for both the site and email to give you a better idea of how this looked when actually running.
+This is a rails app designed to create a referral program add on for shopify stores
 
 ## Mechanics
 
@@ -18,11 +17,6 @@ By default, we block more than 2 sign-ups from the same IP address. This was sim
 * Type `bundle exec rails s` to startup the Rails Server
   * For convenience we have also bundled a Heroku Procfile to use on production. This uses [Unicorn](https://github.com/defunkt/unicorn) for the web server and runs a [Delayed::Job](https://github.com/collectiveidea/delayed_job) worker for sending email. 
 
-## Teardown 
-
-When your prelaunch campaign comes to an end we've included a helpful `rake` task to help you compile the list of winners into CSV's containing the email addresses and the amount of referrals the user had. 
-
-* Run `bundle exec rake prelaunchr:create_winner_csvs` and the app will export CSV's in `/lib/assets` corresponding to each prize group.  
 
 ## Configuration
 
@@ -36,5 +30,5 @@ When your prelaunch campaign comes to an end we've included a helpful `rake` tas
 The code, documentation, non-branded copy and configuration are released under
 the MIT license. Any branded assets are included only to illustrate and inspire.
 
-Please change the artwork to use your own brand! Harry's does not give
+Please change the artwork to use your own brand! Vrai and Oro do not give
 you permission to use our brand or trademarks in your own marketing.

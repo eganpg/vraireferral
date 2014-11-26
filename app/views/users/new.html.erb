@@ -7,10 +7,12 @@
         <p class="go-to brandon">In the meantime, head to  <a href="http://www.harrys.com/">WWW.HARRYS.COM</a></p>
         <p class="again brandon">Thank You Again!</p>
     <% else %>
-        <%= $id %>
+        <div class="key"></div>
+        <p class="byline brandon">Thanks for checking out the rewards program, please login/create an account to join the rewards program</p>
         <%= form_for @user, :url => { :action => "create" } do |f| %>
             <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
-            <input class="submit brandon" name="commit" type="submit" value="Step Inside" />
+            <%= f.password_field :password, :placeholder => "Password" %></br>
+            <%= f.submit %>
         <% end %>
     <% end %>
 </div>
