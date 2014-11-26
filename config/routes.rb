@@ -1,5 +1,5 @@
 Prelaunchr::Application.routes.draw do
-
+root :to => "users#new"
   get 'welcome' => 'home#welcome'
   get 'design' => 'home#design'
 
@@ -8,16 +8,17 @@ Prelaunchr::Application.routes.draw do
     post 'login' => :create
     get 'auth/shopify/callback' => :show
     delete 'logout' => :destroy
-    root :to => "users#new"  
+     
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
-  resources :users
-  match 'users/new' => 'users#new'
+
+  root :to => "users#new"
 
   match 'users/create' => 'users#create'
 
   match 'refer-a-friend' => 'users#refer'
+  get 'users/refer' => 'users#refer'
 
   match 'privacy-policy' => 'users#policy'
 
