@@ -252,8 +252,8 @@ html.home{
 }
 
 #refer .header{
-	height: 50px;
-	background: #074E6F;
+	height: 100px;
+	background: #FFFFFF;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -282,7 +282,7 @@ html.home{
 	line-height: 0;
 	margin-right: 14px;
 	letter-spacing: 1px;
-	background: url(/assets/refer/logo.png) 0 0 no-repeat;
+	/*background: url(/assets/refer/logo.png) 0 0 no-repeat;*/
 	background-size: 106px 19px;
 	height: 19px;
 	width: 106px;
@@ -297,7 +297,8 @@ html.home{
 
 #refer .share-wrap{
 	margin: 0 auto;
-	width: 400px;
+	padding-top: 30px;
+	width: 100%;
 	text-align: center;
 	letter-spacing: .13em;
 }
@@ -310,17 +311,17 @@ html.home{
 }
 
 #refer .share-wrap .title{
-	font-size: 26px;
+	font-size: 34px;
 	line-height: 40px;
 	font-style: italic;
 	color: #FFFFFF;
 	margin-top: 18px;
-	letter-spacing: .13em;
 }
 
 #refer .share-wrap .subtitle{
-	color: #FFFFFF;
+	color: #9E9E9E;
 	font-size: 14px;
+	font-style: italic;
 	text-transform: none;
 	margin-top: 15px;
 }
@@ -445,7 +446,7 @@ html.home{
 
 #refer .prizes .products li.product{
 	height: 100%;
-	color: #074E6F;
+	color: #343434;
 	width: 125px;
 	margin-right: 129px;
 	float: left;
