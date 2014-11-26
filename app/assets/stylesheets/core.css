@@ -58,7 +58,6 @@ html.home{
 	font-weight: bold;
 	font-size: 40px;
 	color: #074E6F;
-	text-transform: uppercase;
 	margin: 85px 0 0 136px;
 	position: relative;
 	z-index: 2;
@@ -73,7 +72,6 @@ html.home{
 	line-height: 30px;
 	position: relative;
 	z-index: 2;
-	text-transform: uppercase;
 	text-align: center;
 	width: 375px;
 	letter-spacing: 1px;
@@ -95,7 +93,6 @@ html.home{
 
 #home .form-wrap .byline{
 	font-size: 15px;
-	text-transform: uppercase;
 	color: #074E6F;
 	text-align: center;
 	font-weight: bold;
@@ -121,7 +118,6 @@ html.home{
 	line-height: 37px;
 	color: #FFF;
 	font-size: 13px;
-	text-transform: uppercase;
 	border: 0;
 	letter-spacing: 2px;
 }
@@ -143,7 +139,6 @@ html.home{
 }
 
 #home .form-wrap.ended .compiling{
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 14px;
 	line-height: 30px;
@@ -165,7 +160,6 @@ html.home{
 	color: #074e6f;
 	font-size: 19px;
 	font-weight:bold;
-	text-transform: uppercase;
 	font-style: normal;
 	text-decoration: none;
 }
@@ -177,7 +171,6 @@ html.home{
 #home .form-wrap.ended .again{
 	font-weight: 500;
 	color: #555556;
-	text-transform: uppercase;
 	font-size: 14px;
 	text-align: center;
 }
@@ -188,7 +181,6 @@ html.home{
 }
 
 #home .form-wrap.ended .thanks{
-	text-transform: uppercase;
 	font-weight: 500;
 	color: #074e6f;
 	text-align: center;
@@ -199,7 +191,6 @@ html.home{
 }
 
 #home .form-wrap.ended .compiling{
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 14px;
 	line-height: 30px;
@@ -233,7 +224,6 @@ html.home{
 #home .form-wrap.ended .again{
 	font-weight: 500;
 	color: #555556;
-	text-transform: uppercase;
 	font-size: 14px;
 	text-align: center;
 }
@@ -247,7 +237,7 @@ html.home{
 }
 
 .brandon{
-	font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+	font-family: "Georgia", "Utopia", "Times New Roman", serif;
 }
 
 #refer{
@@ -279,7 +269,6 @@ html.home{
 	float: left;
 	color: #FFF;
 	font-weight: 500;
-	text-transform: uppercase;
 	line-height: 50px;
 }
 
@@ -301,41 +290,16 @@ html.home{
 }
 
 #refer .hero{
-	background: #F1F0EE;
+	background: #343434;
 	height: 391px;
 	overflow: hidden;
 }
 
-#refer .mammoth{
-	width: 612px;
-	height: 394px;
-	background: url(/assets/refer/mammoth.png) 0 0 no-repeat;
-	background-size: 610px 394px;
-	overflow: hidden;
-	margin-top: 15px;
-	float: left;
-}
-
-#refer .mammoth .need{
-	color: #FFF;
-	font-size: 38px;
-	text-transform: uppercase;
-	font-weight: bold;
-	margin: 102px 0 0 72px;
-	display: block;
-	line-height: 56px;
-	letter-spacing: 4px;
-	text-align: center;
-	width: 284px;
-}
-
 #refer .share-wrap{
-	float: right;
+	margin: 0 auto;
 	width: 400px;
 	text-align: center;
-	text-transform: uppercase;
 	letter-spacing: .13em;
-	margin-right: 60px;
 }
 
 #refer .share-wrap .why{
@@ -346,17 +310,16 @@ html.home{
 }
 
 #refer .share-wrap .title{
-	font-size: 30px;
+	font-size: 26px;
 	line-height: 40px;
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #074E6F;
+	font-style: italic;
+	color: #FFFFFF;
 	margin-top: 18px;
 	letter-spacing: .13em;
 }
 
 #refer .share-wrap .subtitle{
-	color: #565656;
+	color: #FFFFFF;
 	font-size: 14px;
 	text-transform: none;
 	margin-top: 15px;
@@ -391,16 +354,13 @@ html.home{
 }
 
 #refer .share-wrap .social-links .twit{
-	background: url(/assets/refer/twit.png);
+	background: url(/assets/refer/twitter.png);
 	background-size: 27px 27px;
 	width: 27px;
 	height: 27px;
 }
 
 #refer .share-wrap .social-links .sep{
-	height: 28px;
-	width: 1px;
-	background: #BAB9BA;
 	margin: 0 20px;
 }
 
@@ -422,7 +382,6 @@ html.home{
 	font-weight: bold;
 	margin: 20px 0 0 0;
 	letter-spacing: 2px;
-	text-transform: uppercase;
 }
 
 #refer .prizes .progress{
@@ -465,14 +424,13 @@ html.home{
 
 #refer .prizes .products li.title{
 	height: 100%;
-	text-transform: uppercase;
 	color: #074E6F;
 	font-weight: 500;
 	font-size: 14px;
 	float: left;
 	margin-right: 68px;
 	width: 165px;
-	font-weight: bold;
+	font-style: italic;
 }
 
 #refer .prizes .products li.title .friends{
@@ -497,13 +455,9 @@ html.home{
 #refer .prizes .products li.product .circle{
 	height: 30px;
 	width: 30px;
-	border-radius: 15px;
-	border: 1px solid #DAD9D2;
 	text-align: center;
 	line-height: 30px;
-	color: #868282;
 	overflow: hidden;
-	background: #F1F0EE;
 	font-weight: bold;
 	margin: 0 auto;
 }
