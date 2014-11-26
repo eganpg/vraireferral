@@ -2,6 +2,7 @@ class UsersController < ApplicationController
     before_filter :skip_first_page, :only => :new
 
     def new
+
         id = params[:id]
         
         if id == nil
@@ -36,8 +37,24 @@ class UsersController < ApplicationController
     end
 
     def create
+
+        # If user is not being directed from the shopify store, prompt to login or become a user
+        @email = params[:user][:email]
+        shop_url = "https://398160aac7a1e0878f5bb654881183e2:30693a53f184518949724a67e708b6c0@traction-development.myshopify.com/admin/"
+        ShopifyAPI::Base.site = shop_url
+        user = ShopifyAPI::Customer.all
+        
+        
+        user.each do |u|
+            z = u.as_json
+            email = z.values[3]
+            if email == @email
+                
+            end
+        end 
         # Get user to see if they have already signed up
-        @user = User.find_by_email(params[:user][:email]);
+        @user = user.first.where(email: params[:user][:email]);
+        raise @user.inspect
             
         # If user doesnt exist, make them, and attach referrer
         if @user.nil?
@@ -51,7 +68,7 @@ class UsersController < ApplicationController
                 )
             end
 
-            if cur_ip.count > 20
+            if cur_ip.count > 2
                 return redirect_to root_path
             else
                 cur_ip.count = cur_ip.count + 1
