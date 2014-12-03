@@ -53,8 +53,8 @@ class UsersController < ApplicationController
             end
         end 
         # Get user to see if they have already signed up
-        @user = user.first.where(email: params[:user][:email]);
-        raise @user.inspect
+        # @user = user.where(email: params[:user][:email]);
+        # raise @user.inspect
             
         # If user doesnt exist, make them, and attach referrer
         if @user.nil?

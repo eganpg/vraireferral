@@ -9,7 +9,9 @@
  *= require shopify_app
  *= require_tree .
 */
-
+.main-header nav.full .nav-item > .label {
+	background-color: white;
+}
 form{
 	margin-bottom: 0;
 }
