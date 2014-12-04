@@ -13,9 +13,9 @@
             <p class="subtitle brandon">Copy & Share</p>
             <% twitter_message = "#fine jewelry, no markups. Just enrolled in @vraiandoro/'s rewards program!." %>
             <div class="social-links">
-                <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="fb" target="_blank"></a>
-                <div class="sep"></div>
                 <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
+                <div class="sep"></div>
+                <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="fb" target="_blank"></a>
             </div>
         </div>  
     </div>

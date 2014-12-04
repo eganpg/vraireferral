@@ -337,7 +337,7 @@ html.home{
 }
 
 #refer .share-wrap .social-links{
-	width: 120px;
+	width: 350px;
 	height: 37px;
 	margin: 25px auto 0;
 	text-align: center;
@@ -347,22 +347,26 @@ html.home{
 	display: inline-block;
 }
 
-#refer .share-wrap .social-links .fb{
-	background: url(/assets/refer/fb.png);
-	background-size: 27px 27px;
-	width: 27px;
+#refer .share-wrap .social-links .twit{
+	background: url(/assets/refer/tweet_button.png) no-repeat;
+	background-size: 75px 27px;
+	background-position: 1px;
+	border: 4px solid #343434;
+	width: 80px;
 	height: 27px;
 }
 
-#refer .share-wrap .social-links .twit{
-	background: url(/assets/refer/twitter.png);
-	background-size: 27px 27px;
-	width: 27px;
+#refer .share-wrap .social-links .fb{
+	background: url(/assets/refer/fb_share.png) no-repeat;
+	background-size: 75px 27px;
+	background-position: 1px;
+	border: 4px solid #343434;
+	width: 80px;
 	height: 27px;
 }
 
 #refer .share-wrap .social-links .sep{
-	margin: 0 20px;
+	margin: 0 5px;
 }
 
 #refer .prizes{
