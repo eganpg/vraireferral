@@ -521,7 +521,7 @@ select:focus:required:invalid:focus {
   font-weight: normal;
   line-height: 18px;
   text-align: center;
-  text-shadow: 0 1px 0 #ffffff;
+  text-shadow: none;
   vertical-align: middle;
   background-color: #eeeeee;
   border: 1px solid #ccc;
@@ -834,7 +834,6 @@ legend + .control-group {
 .btn-inverse,
 .btn-inverse:hover {
   color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .btn-primary.active,
 .btn-warning.active,

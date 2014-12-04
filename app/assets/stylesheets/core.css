@@ -418,8 +418,9 @@ html.home{
 #refer .prizes ul.products{
 	height: 105px;
 	width: 100%;
-	margin-top: 30px;
-	position: relative;
+	margin-top: 52px;
+	/*the position was relative before, will need to change back to make responsive*/
+	position: absolute;
 	z-index: 1;
 }
 
