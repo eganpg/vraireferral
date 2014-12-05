@@ -1,18 +1,21 @@
-
-
-<div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
-    <% if Rails.application.config.ended %>
-        <p class="thanks brandon">THANK YOU FOR PARTICIPATING<br>IN OUR PRE-LAUNCH.</p>
-        <p class="compiling brandon">WE ARE COMPILING REWARDS RIGHT NOW AND WILL EMAIL<br/>COUPON CODES TO ALL RECIPIENTS IN THE NEXT DAY OR TWO</p>
-        <p class="go-to brandon">In the meantime, head to  <a href="http://www.harrys.com/">WWW.HARRYS.COM</a></p>
-        <p class="again brandon">Thank You Again!</p>
-    <% else %>
-        <div class="key"></div>
-        <p class="byline brandon">Thanks for checking out the rewards program, please login/create an account to join the rewards program</p>
-        <%= form_for @user, :url => { :action => "create" } do |f| %>
-            <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
-            <%= f.password_field :password, :placeholder => "Password" %></br>
-            <%= f.submit %>
-        <% end %>
-    <% end %>
+<div class="row">
+  <div class="col-sm-12">
+    <h1 class="login_title" style="text-align:center;">CONFIRM EMAIL TO GET REWARDS</h1>
+  </div>
 </div>
+<div class="row">
+  <div class="co-12-sm">
+    <h6 class="email">Email</h6>
+    <%= form_for @user, :url => { :action => "create" } do |f| %>
+    <h6 class="email"><%= f.text_field :email, :placeholder => "Enter Email", class:'email' %>
+    </h6>
+      <hr class="hr">
+      <div class="submit">
+        <%= f.submit class:"email"%>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+

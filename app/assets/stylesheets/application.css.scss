@@ -32,7 +32,20 @@ form{
 .clearfix:after {
     clear: both;
 }
+/*Login Page*/
 
+#user_email {
+	width: 40%;
+	height:45px;
+	margin-left: 30%
+}
+.submit {
+	text-align: center;
+}
+.hr {
+	margin-left: 25%;
+	width: 50%;
+}
 
 /* Home */
 
