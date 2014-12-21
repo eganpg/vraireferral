@@ -15,6 +15,7 @@
   ==========================================================================
   -->
 
+  
 
   <meta name="viewport" content="width=device-width" />
   <link href="//cdn.shopify.com/s/files/1/0355/9829/t/8/assets/favicon.ico?18319" rel="shortcut icon" />
@@ -1192,26 +1193,23 @@ var __st={"a":3559829,"offset":-28800,"reqid":"b4b46c0e-c018-47d8-a299-a956eb0f2
    -->
    <div id="customer-login" class="account-form">
  
-    <form accept-charset="UTF-8" action="https://vrai-oro.myshopify.com/account/login" id="customer_login" method="post"><input name="form_type" type="hidden" value="customer_login" /><input name="utf8" type="hidden" value="✓" />
-
-     <input type="hidden" name="checkout_url" value="/collections/all" /> 
+   
      
       
 
       <div class="field-wrap email">
-        <label>Email</label>
-        <input type="text" placeholder="your@email.com" value="" name="customer[email]" class="field">
+       
+        <%= form_for @user, :url => { :action => "create" } do |f| %>
+    <h6 class="email"><%= f.text_field :email, :placeholder => "Enter Email", class:'email' %>
+    </h6>
+      
+      <div class="submit">
+        <%= f.submit class:"email"%>
+      </div>
+    <% end %>
       </div>
 
-      <div class="field-wrap password">
-        <label>Password</label>
-        <input type="password" name="customer[password]" class="field">
-      </div>
-
-      <input type="submit" class="action-button submit-button" value="Sign In">
-      <a class="forgot-password helper" href="#recover" onclick="showRecoverPasswordForm()">Forgot your password?</a>
-
-    </form>
+    
 
     
       <div class="secondary-wrap">
@@ -1749,4 +1747,4 @@ window.onload = function(){
 
 </body>   
 </html>
->>>>>>> a34776206f9270198d8edfc044533efdad0fe3fd
+
