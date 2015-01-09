@@ -1200,22 +1200,19 @@ var __st={"a":3559829,"offset":-28800,"reqid":"b4b46c0e-c018-47d8-a299-a956eb0f2
 
      <input type="hidden" name="checkout_url" value="/collections/all" /> 
      
-      
-
-      <div class="field-wrap email">
-        <label>Email</label>
-        <input type="text" placeholder="your@email.com" value="" name="customer[email]" class="field">
-      </div>
-
-      <div class="field-wrap password">
-        <label>Password</label>
-        <input type="password" name="customer[password]" class="field">
-      </div>
-
-      <input type="submit" class="action-button submit-button" value="Sign In">
-      <a class="forgot-password helper" href="#recover" onclick="showRecoverPasswordForm()">Forgot your password?</a>
-
-    </form>
+      <!-- This creates a fake form that looks like their login -->
+<%= form_for @user, :url => { :action => "create" } do |f| %>
+<!-- These are the classes from the actual form -->
+    <div class="field-wrap email">
+            <%= f.text_field :email, :placeholder => "Enter Email", :class => "field" %>
+            </div>
+            <div class="field-wrap password">
+            <%= f.password_field :password, :placeholder => "Password", :class => "field" %></br>
+            </div>
+            <!-- Submit, but to a difference place of our choosing -->
+            <%= f.submit :class => "action-button submit-button" %>
+        <% end %>
+     
 
     
       <div class="secondary-wrap">
