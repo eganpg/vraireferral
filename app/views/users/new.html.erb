@@ -1186,7 +1186,7 @@ var __st={"a":3559829,"offset":-28800,"reqid":"b4b46c0e-c018-47d8-a299-a956eb0f2
 
   <br/> <div class="customerpg">
   <div class="page-title">
-    <span class="email-sign" style="font-size:24px;text-transform:uppercase;letter-spacing:1px;font-family:'Open Sans',sans-serif;">Please Verify Your Account</span>
+    <span class="email-sign" style="font-size:24px;text-transform:uppercase;letter-spacing:1px;font-family:'Open Sans',sans-serif;">Please Confirm Your Account</span>
   </div>
 
   <!-- <p>Sign in through Facebook</p>
@@ -1196,30 +1196,21 @@ var __st={"a":3559829,"offset":-28800,"reqid":"b4b46c0e-c018-47d8-a299-a956eb0f2
    -->
    <div id="customer-login" class="account-form">
  
-    <form accept-charset="UTF-8" action="https://vrai-oro.myshopify.com/account/login" id="customer_login" method="post"><input name="form_type" type="hidden" value="customer_login" /><input name="utf8" type="hidden" value="✓" />
-
-     <input type="hidden" name="checkout_url" value="/collections/all" /> 
+   
      
-      <!-- This creates a fake form that looks like their login -->
+      
 <%= form_for @user, :url => { :action => "create" } do |f| %>
-<!-- These are the classes from the actual form -->
     <div class="field-wrap email">
             <%= f.text_field :email, :placeholder => "Enter Email", :class => "field" %>
             </div>
             <div class="field-wrap password">
             <%= f.password_field :password, :placeholder => "Password", :class => "field" %></br>
             </div>
-            <!-- Submit, but to a difference place of our choosing -->
             <%= f.submit :class => "action-button submit-button" %>
         <% end %>
      
 
     
-      <div class="secondary-wrap">
-        <p>New to Vrai & Oro?  <a href="/account/register"> Sign up for an account</a></p>
-      </div>
-    
-  </div>
 
   <div id="recover-password" class="account-form">
     <form accept-charset="UTF-8" action="/account/recover" method="post"><input name="form_type" type="hidden" value="recover_customer_password" /><input name="utf8" type="hidden" value="✓" />
