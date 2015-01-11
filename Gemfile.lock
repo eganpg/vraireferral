@@ -1,3 +1,13 @@
+GIT
+  remote: http://github.com/seyhunak/twitter-bootstrap-rails.git
+  revision: b701e23e91bd2726af5bc669b87f7f34efc96ab1
+  specs:
+    twitter-bootstrap-rails (3.2.0)
+      actionpack (>= 3.1)
+      execjs
+      rails (>= 3.1)
+      railties (>= 3.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -173,7 +183,6 @@ GEM
     ref (1.0.5)
     responders (0.9.3)
       railties (~> 3.1)
-    ruby (0.1.0)
     sass (3.2.5)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -227,5 +236,6 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   shopify_app
   therubyracer
+  twitter-bootstrap-rails!
   uglifier (>= 1.0.3)
   unicorn
