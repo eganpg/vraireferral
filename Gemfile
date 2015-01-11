@@ -49,7 +49,7 @@ gem 'twitter-bootstrap-rails', :git => 'http://github.com/seyhunak/twitter-boots
 # gem 'debugger'
 gem 'shopify_app'
 
-group :development, :test do
+
   gem "less-rails-bootstrap"
   gem "therubyracer", :platforms => :ruby
-end
+
