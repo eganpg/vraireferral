@@ -1,40 +1,40 @@
-@import "twitter/bootstrap/variables";
-@import "twitter/bootstrap/mixins";
+/*@import "twitter/bootstrap/variables";
+@import "twitter/bootstrap/mixins";*/
 
-@shopifyBtnBackground: #1196c1;
-@shopifyBtnBackground2: #36abce;
+/*@shopifyBtnBackground: #1196c1;*/
+/*@shopifyBtnBackground2: #36abce;*/
 
 // core
 .btn {
   display: inline-block;
   padding: 4px 10px 4px;
-  font-size: @baseFontSize;
+ /* font-size: @baseFontSize;
   line-height: @baseLineHeight;
-  color: @grayDark;
+  color: @grayDark;*/
   text-align: center;
   text-shadow: none;
-  #gradient > .vertical-three-colors(@white, @white, 25%, darken(@white, 10%)); // Don't use .gradientbar() here since it does a three-color gradient
+  /*#gradient > .vertical-three-colors(white, white, 25%, darken(white, 10%)); // Don't use .gradientbar() here since it does a three-color gradient*/
   border: 1px solid #ccc;
   border-bottom-color: #bbb;
-  .border-radius(4px);
-  @shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
-  .box-shadow(@shadow);
+  border-radius:(4px);
+  /*@shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);*/
+  /*box-shadow:(@shadow);*/
   cursor: pointer;
 
-  // Give IE7 some love
-  .ie7-restore-left-whitespace();
+  /*// Give IE7 some love
+  .ie7-restore-left-whitespace();*/
 }
 
 // Hover state
 .btn:hover {
-  color: @grayDark;
+  color: gray;
   text-decoration: none;
-  background-color: darken(@white, 10%);
+  background-color: darken(white, 10%);
   background-position: 0 -15px;
 
-  // transition is only when going to hover, otherwise the background
+  /*// transition is only when going to hover, otherwise the background
   // behind the gradient (there for IE<=9 fallback) gets mismatched
-  .transition(background-position .1s linear);
+  .transition(background-position .1s linear);*/
 }
 
 
@@ -51,10 +51,10 @@
 .btn-info,
 .btn-info:hover {
   text-shadow: none;
-  color: @white
+  color: white
 }
 
-// Set the backgrounds
+/*// Set the backgrounds
 // -------------------------
 .btn-primary {
   .buttonBackground(@shopifyBtnBackground, spin(@shopifyBtnBackground, 20));
@@ -74,4 +74,4 @@
 // Info appears as a neutral blue
 .btn-info {
   .buttonBackground(#5bc0de, #2f96b4);
-}
+}*/
