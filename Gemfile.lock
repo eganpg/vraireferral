@@ -222,10 +222,8 @@ DEPENDENCIES
   less-rails-bootstrap
   pg
   pry
-
   rails (= 3.2.11)
   rails_12factor
-
   sass-rails (~> 3.2.3)
   shopify_app
   therubyracer
