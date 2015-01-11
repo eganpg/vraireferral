@@ -168,6 +168,7 @@ GEM
     ref (1.0.5)
     responders (0.9.3)
       railties (~> 3.1)
+    ruby (0.1.0)
     sass (3.2.5)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -216,7 +217,8 @@ DEPENDENCIES
   less-rails-bootstrap
   pg
   pry
-  rails (= 3.2.11)
+  rails
+  ruby
   sass-rails (~> 3.2.3)
   shopify_app
   therubyracer
