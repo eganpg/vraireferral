@@ -31,6 +31,7 @@ gem 'delayed_job_active_record'
 gem 'unicorn'
 
 gem 'rails_12factor'
+gem 'twitter-bootstrap-rails', :git => 'http://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
