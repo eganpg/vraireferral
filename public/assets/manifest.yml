@@ -17,8 +17,8 @@ home/key.png: home/key-da4d58ad73bf5a155ca0f3426d90e901.png
 home/key/index.png: home/key-da4d58ad73bf5a155ca0f3426d90e901.png
 home/key@2x.png: home/key@2x-ece594ba52573774d6b752f03c5d7104.png
 home/key@2x/index.png: home/key@2x-ece594ba52573774d6b752f03c5d7104.png
-refer/andfavicon.png: refer/andfavicon-124d518aab86ff5d47ce5deb4ed28cc1.png
-refer/andfavicon/index.png: refer/andfavicon-124d518aab86ff5d47ce5deb4ed28cc1.png
+refer/andfavicon.ico: refer/andfavicon-124d518aab86ff5d47ce5deb4ed28cc1.ico
+refer/andfavicon/index.ico: refer/andfavicon-124d518aab86ff5d47ce5deb4ed28cc1.ico
 refer/blade-explain.png: refer/blade-explain-5d5d1eff8ab18125ccbc6e6dd4c2ff7c.png
 refer/blade-explain/index.png: refer/blade-explain-5d5d1eff8ab18125ccbc6e6dd4c2ff7c.png
 refer/blade-explain@2x.png: refer/blade-explain@2x-1d1889a0d73eb0384339b800291b99c0.png
