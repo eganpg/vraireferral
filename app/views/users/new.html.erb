@@ -1186,7 +1186,7 @@ var __st={"a":3559829,"offset":-28800,"reqid":"b4b46c0e-c018-47d8-a299-a956eb0f2
 
   <br/> <div class="customerpg">
   <div class="page-title">
-    <span class="email-sign" style="font-size:24px;text-transform:uppercase;letter-spacing:1px;font-family:'Open Sans',sans-serif;">Please Verify Your Account</span>
+    <span class="email-sign" style="font-size:24px;text-transform:uppercase;letter-spacing:1px;font-family:'Open Sans',sans-serif;">Please Confirm Your Email</span>
   </div>
 
   <!-- <p>Sign in through Facebook</p>
@@ -1204,9 +1204,9 @@ var __st={"a":3559829,"offset":-28800,"reqid":"b4b46c0e-c018-47d8-a299-a956eb0f2
             <%= f.text_field :email, :placeholder => "Enter Email", :class => "field" %>
             </div>
             <div class="field-wrap password">
-            <%= f.password_field :password, :placeholder => "Password", :class => "field" %></br>
+            <%#= f.password_field :password, :placeholder => "Password", :class => "field" %><!-- </br> -->
             </div>
-            <%= f.submit :class => "action-button submit-button" %>
+            <%= f.submit :class => "action-button submit-button", :value => "Join Now" %>
         <% end %>
      
 
