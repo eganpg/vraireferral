@@ -1213,7 +1213,7 @@ var __st={"a":3559829,"offset":-28800,"reqid":"b4b46c0e-c018-47d8-a299-a956eb0f2
             <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">Vrai & Oro Credit</p></li>
             <% stops.each do |stop| %>
                 <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
-                    <div class="circle"><%= stop["count"] %></div>
+                    <div class="circle" style="color:#343434"><%= stop["count"] %></div>
                     <div class="sep"></div>
                     <p><%= stop["html"].html_safe %></p>
 

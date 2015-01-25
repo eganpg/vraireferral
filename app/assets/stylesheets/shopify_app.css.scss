@@ -33,11 +33,6 @@ a { color:$col-blue;
   &:hover { color:$col-blue-hover; text-decoration:none;}
 }
 
-.dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover {
-  background-color:$col-blue !important;
-  [class^="icon-"] { background-image: url('/assets/twitter/bootstrap/glyphicons-halflings-white.png');}
-}
-
 .container {
   > footer p { text-align: center;}
   > .content { background-color: #fff; padding: 20px; margin: 0 -20px; @include border-radius(0,0,6px,6px); @include box-shadow(0,1px,2px);}
