@@ -124,6 +124,7 @@ GEM
     multi_json (1.6.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    newrelic_rpm (3.9.9.275)
     oauth2 (0.9.4)
       faraday (>= 0.8, < 0.10)
       jwt (~> 1.0)
@@ -229,6 +230,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   delayed_job_active_record
   less-rails-bootstrap
+  newrelic_rpm
   pg
   pry
   rails (= 3.2.11)
